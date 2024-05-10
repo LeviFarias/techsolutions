@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Solutions - Software House</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -18,6 +17,9 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
+            display: grid; /* Mudança para grid */
+            grid-template-columns: 1fr 1fr; /* Duas colunas */
+            grid-gap: 20px; /* Espaçamento entre as colunas */
         }
 
         .greetings {
@@ -84,7 +86,7 @@
         }
 
         h3 {
-            font-size: 30px;
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
@@ -127,7 +129,9 @@
     <div class="logo">TechSolutions<span class="cursor">︱</span></div>
     <div class="container">
         <h2 class="greetings" id="typing-animation"></h2>
-        <h3>Desenvolvemos softwares totalmente adequados às principais demandas dos seus negócios <mark>em até 30 dias</mark> e <mark>sem burocracia.</mark></h3>
+        <div>
+            <h3>Desenvolvemos softwares totalmente adequados às principais demandas dos seus negócios <mark>em até 30 dias</mark> e <mark>sem burocracia.</mark></h3>
+        </div>
         <ul>
             <li>Ágil desenvolvimento</li>
             <li>Layout técnico</li>
