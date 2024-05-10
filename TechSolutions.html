@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions - Software House</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .greetings {
+            font-size: 60px;
+            margin-bottom: 15px;
+            background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+            background-size: 400% 100%;
+            animation: gradient-bg 3s linear infinite;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes gradient-bg {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3533cd; /* Alteração da cor para roxo */
+            margin: 20px;
+            position: relative; /* Adicionado */
+            display: inline-block; /* Adicionado */
+        }
+
+        .cursor {
+            position: absolute;
+            top: 0;
+            left: calc(100% + 5px); /* Ajuste para posicionar o cursor */
+            color: #3533cd; /* Cor do cursor */
+            animation: cursor-blink 1s infinite;
+        }
+
+        @keyframes cursor-blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        mark {
+            background-color: #ffff00;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">TechSolutions<span class="cursor">︱</span></div>
+    <div class="container">
+        <h2 class="greetings" id="typing-animation"></h2>
+        <h3>Desenvolvemos softwares totalmente adequados às principais demandas dos seus negócios <mark>em até 30 dias</mark> e <mark>sem burocracia.</mark></h3>
+        <ul>
+            <li>Ágil desenvolvimento</li>
+            <li>Layout técnico</li>
+            <li>Suporte ativo</li>
+        </ul>
+        <h2>Soluções para todas as necessidades</h2>
+        <p>Somos uma empresa especializada na elaboração de softwares para as mais variadas finalidades.</p>
+        <ul>
+            <li>Engajamento</li>
+            <li>Marketing</li>
+            <li>Vendas</li>
+            <li>Aprimoramento da experiência dos clientes</li>
+            <li>Organização/Automatização de processos internos</li>
+            <li>Realização de eventos</li>
+        </ul>
+        <h2>Nosso Portfolio</h2>
+        <div>
+            <img src="Pepsico.png" alt="Pepsico por Tech Solution" width="300px" height="250px">
+            <h3>Pepsico</h3>
+            <p>Os veículos da empresa seriam trocados por veículos novos, e os antigos precisavam de um destino. Para isso, desenvolvemos uma Plataforma Interna de leilão para os colaboradores adquirirem carros com valores de mercado.</p>
+        </div>
+        <div>
+            <img src="Shell Box.png" alt="Shell Box por Tech Solutions" width="300px" height="250px">
+            <h3>Shell Box</h3>
+            <p>Solução gamificada para gerar leads qualificados no Taste Festival, mostrando na prática como seria a experiência do abastecimento em um posto de verdade. No caso, ao invés de abastecer, o público tinha acesso ao jogo da memória e, no final, ganhavam brindes exclusivos.</p>
+        </div>
+        <div>
+            <img src="Rede Integra.png" alt="Rede Integra por Tech Solutions" width="300px" height="250px">
+            <h3>Rede Integra Saúde</h3>
+            <p>Desenvolvemos uma plataforma online equipada com telemedicina e funcionalidades de agendamento, permitindo que pacientes se conectem com especialistas de quaisquer localidades.</p>
+        </div>
+        <h2>Conheça mais sobre nós</h2>
+        <a href="SobreNós.html">Sobre nós</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const typingElement = document.getElementById('typing-animation');
+            const text = "Software House habilitada em atender todos os segmentos do mercado :)";
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    typingElement.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, 32); // Intervalo de tempo entre cada caractere (em milissegundos)
+                }
+            }
+            type();
+        });
+    </script>
+</body>
+</html>
