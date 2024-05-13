@@ -21,7 +21,7 @@
             grid-template-columns: 1fr 1fr; /* Duas colunas */
             grid-gap: 20px; /* Espaçamento entre as colunas */
         }
-
+  
         .greetings {
             font-size: 60px;
             margin-bottom: 15px;
@@ -88,6 +88,12 @@
         h3 {
             font-size: 40px;
             margin-bottom: 10px;
+            background: linear-gradient(115deg, #7a7979, #c0c0c0, #7a7979, #c0c0c0);
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradient-bg 3s linear infinite;
         }
 
         p {
@@ -123,14 +129,34 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Estilização da frase */
+        .card {
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card2:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.card:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
     </style>
 </head>
 <body>
     <div class="logo">TechSolutions<span class="cursor">︱</span></div>
     <div class="container">
         <h2 class="greetings" id="typing-animation"></h2>
-        <div>
-            <h3>Desenvolvemos softwares totalmente adequados às principais demandas dos seus negócios <mark>em até 30 dias</mark> e <mark>sem burocracia.</mark></h3>
+        <div class="card">
+            <h3>Desenvolvemos softwares totalmente adequados às principais demandas dos seus negócios em até 30 dias e sem burocracia.</h3>
         </div>
         <ul>
             <li>Ágil desenvolvimento</li>
