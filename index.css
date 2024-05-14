@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.greetings {
+    font-size: 70px;
+    margin-bottom: 100px;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 400% 100%;
+    animation: gradient-bg 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    /* Alteração da cor para roxo */
+    margin: 20px;
+    position: relative;
+    /* Adicionado */
+    display: inline-block;
+    /* Adicionado */
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px);
+    /* Ajuste para posicionar o cursor */
+    color: #ffffff;
+    /* Cor do cursor */
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background: #0B00CF;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0; /* Aumenta a margem superior e inferior */
+    padding: 10px; /* Adiciona preenchimento ao redor do texto */
+    background: linear-gradient(115deg, #666666, #999999); /* Gradiente de cinza */
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-bg 3s linear infinite;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+mark {
+    background-color: #ffff00;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização da frase */
+.card {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.caracteristicas {
+    width: 100%;
+    /* Alteração para ocupar toda a largura da tela */
+    padding: 20px;
+    /* Adicione padding para espaçamento interno */
+    background-color: #75ca88;
+    /* Cor de fundo */
+    margin-bottom: 150px;
+    /* Adicione margem inferior para separar dos elementos abaixo */
+    box-sizing: border-box;
+    /* Adicione essa propriedade para que o padding seja incluído na largura total */
+}
+
+.div_carac {
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.carac_card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 100%;
+}
+
+.carac_titulo {
+    width: 100%;
+    display: inline-block;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 40px;
+}
+
+.carac_texto {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(115deg, #7a7979, #c0c0c0, #7a7979, #c0c0c0);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-bg 3s linear infinite;
+}
