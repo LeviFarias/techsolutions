@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Solutions - Software House</title>
     <link rel="stylesheet" href="styles/index.css">
-    
+    <script src="script/script.js"></script>
 </head>
 
 <body>
     <header>
-    <div class="logo">TechSolutions<span class="cursor">︱</span></div>
+    <div class="logo">TechSolutions</TechSolutions><span class="cursor">_</span></div>
     </header>
     <div class="container">
         <h2 class="greetings" id="typing-animation"></h2>
@@ -19,10 +19,10 @@
     <div class="card">
         <h3>Desenvolvemos softwares totalmente adequados às principais demandas dos seus negócios em até 30 dias e
             sem burocracia.</h3>
-    </div>
-    <div class="div_carac">
+    
+    <div class="div_carac_container">
         <div class="carac_card">
-            <p class="carac_texto">
+            <p class="carac_texto" style="font-size: 30px;">
                 Ágil desenvolvimento
             </p>
         </div>
@@ -37,8 +37,9 @@
             </p>
         </div>
     </div>
-    <div>
-        <h2>Soluções para todas as necessidades</h2>
+    </div>
+    <div class="pattern">
+        <h2 class="pattern_font">Soluções para todas as necessidades</h2>
     </div>
     <p>Somos uma empresa especializada na elaboração de softwares para as mais variadas finalidades.</p>
     <ul>
@@ -74,21 +75,7 @@
     <a href="SobreNós.html">Sobre nós</a>
     </div> 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const typingElement = document.getElementById('typing-animation');
-            const text = "Software House habilitada em atender todos os segmentos do mercado :)";
-            let i = 0;
-            function type() {
-                if (i < text.length) {
-                    typingElement.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(type, 32); // Intervalo de tempo entre cada caractere (em milissegundos)
-                }
-            }
-            type();
-        });
-    </script>
+    
 </body>
 
 </html>
