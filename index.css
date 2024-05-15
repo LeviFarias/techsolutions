@@ -24,6 +24,18 @@ body {
     color: transparent;
 }
 
+.pattern_font {
+    font-size: 70px;
+    font
+    margin-bottom: 100px;
+    background: white;
+    background-size: 400% 100%;
+    animation: gradient-bg 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 @keyframes gradient-bg {
     0% {
         background-position: 0 0;
@@ -34,24 +46,14 @@ body {
     }
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    /* Alteração da cor para roxo */
-    margin: 20px;
-    position: relative;
-    /* Adicionado */
-    display: inline-block;
-    /* Adicionado */
-}
 
 .cursor {
     position: absolute;
-    top: 0;
-    left: calc(100% + 5px);
+    top: 1px;
+    /* bottom: 10px; */
+    left: 165px;
     /* Ajuste para posicionar o cursor */
-    color: #ffffff;
+    color: #000000;
     /* Cor do cursor */
     animation: cursor-blink 1s infinite;
 }
@@ -70,8 +72,32 @@ body {
     }
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #333333, #555555);
+    }
+    50% {
+        background: linear-gradient(135deg, #777777, #999999);
+    }
+    100% {
+        background: linear-gradient(135deg, #333333, #555555);
+    }
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    /* Alteração da cor para roxo */
+    margin: 20px;
+    position: relative;
+    /* Adicionado */
+    display: inline-block;
+    /* Adicionado */
+}
 header {
-    background: #0B00CF;
+    color: white;
 }
 
 h1,
@@ -139,11 +165,11 @@ a:hover {
 
 /* Estilização da frase */
 .card {
-    width: fit-content;
+    width: 100%;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background: lwhite;
     color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -170,26 +196,65 @@ a:hover {
     /* Adicione essa propriedade para que o padding seja incluído na largura total */
 }
 
-.div_carac {
-    overflow: auto;
+.div_carac_container{
     display: flex;
-    scroll-snap-type: x mandatory;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 15px;
+            flex-wrap: wrap; /* Permite que os cards se ajustem em múltiplas linhas, se necessário */
+            justify-content: center; /* Centraliza os cards horizontalmente */
+            gap: 1rem; /* Espaçamento entre os cards */
+            padding: 1rem; /* Espaçamento interno do contêiner */
 }
-
 .carac_card {
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 1rem;
-    width: 100%;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: calc(33% - 2rem); /* Ajuste conforme necessário */
+            height: auto;
+            text-align: center;
+            box-sizing: border-box;
+            min-width: 200px; /* Largura mínima para o card */
+            max-width: 300px; /* Largura máxima para o card */
+            
 }
-
+.pattern {
+    /* Basic dimensions and centering */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  
+    /* Dark mode colors and gradient */
+    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(
+      135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a
+    );
+    background-size: 40px 40px;
+  
+    /* Animation */
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+  
+  
+  
 .carac_titulo {
     width: 100%;
     display: inline-block;
@@ -200,6 +265,7 @@ a:hover {
     text-align: center;
     margin: 1rem auto;
     font-size: 40px;
+    
 }
 
 .carac_texto {
