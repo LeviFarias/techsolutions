@@ -7,15 +7,15 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem 2.5rem;
     
 }
 
 .greetings {
-    font-size: 70px;
-    margin-bottom: 100px;
+    font-size: 4.375rem;
+    margin-bottom: 6.25rem;
     background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
     background-size: 400% 100%;
     animation: gradient-bg 3s linear infinite;
@@ -24,17 +24,7 @@ body {
     color: transparent;
 }
 
-.pattern_font {
-    font-size: 70px;
-    font
-    margin-bottom: 100px;
-    background: white;
-    background-size: 400% 100%;
-    animation: gradient-bg 3s linear infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
+
 
 @keyframes gradient-bg {
     0% {
@@ -174,7 +164,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.card2:hover {
+/* .card2:hover {
     transform: scale(0.98);
     border-radius: 20px;
 }
@@ -182,7 +172,7 @@ a:hover {
 .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
-
+ */
 .caracteristicas {
     width: 100%;
     /* Alteração para ocupar toda a largura da tela */
@@ -242,8 +232,67 @@ a:hover {
   
     /* Animation */
     animation: move 4s linear infinite;
-  }
+  display: grid; /* Definindo como grid */
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    justify-content: center;
   
+  }
+
+  .pattern_font {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    background: white;
+    background-size: 400% 100%;
+    animation: gradient-bg 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.pattern2 {
+    margin-top: 100vh; /* Espaço para rolar */
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after,
+.hover-underline-animation.scrolled:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
   @keyframes move {
     0% {
       background-position: 0 0;
@@ -280,3 +329,84 @@ a:hover {
     color: transparent;
     animation: gradient-bg 3s linear infinite;
 }
+
+.glass {
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+  }
+  
+  .glass::before,
+  .glass::after {
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+  }
+  
+  .glass::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+  }
+  
+  .glass::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+  }
+  
+  .glass .box {
+    width: 11.875em;
+    height: 15.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+  }
+  
+  .glass .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .glass .box .title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  
+  .glass .box div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .glass .box div p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+  
+  .glass .box div span {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+  
+  .glass .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+  }
+  
+  .glass .box:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
