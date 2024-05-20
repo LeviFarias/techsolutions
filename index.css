@@ -240,6 +240,7 @@ a:hover {
 
   .pattern_font {
     font-size: 5rem;
+    font-style: 'Roboto Mono', monospace;
     margin-bottom: 2rem;
     background: white;
     background-size: 400% 100%;
@@ -349,4 +350,118 @@ a:hover {
     text-align: right;
     padding: 3rem;
     box-sizing: border-box;
+    font-style: 'Roboto Mono', monospace;
+}
+
+.div_portfolio {
+    width: 100%;
+    height: 100%;
+    /* control ize */
+    --u: 5px;
+    --c1: #ededee;
+    --c2: #000000;
+    --c3: #1e1e1e;
+    --gp: 50% / calc(var(--u) * 16.9) calc(var(--u) * 12.8);
+    background: conic-gradient(
+          from 122deg at 50% 85.15%,
+          var(--c2) 0 58deg,
+          var(--c3) 0 116deg,
+          #fff0 0 100%
+        )
+        var(--gp),
+      conic-gradient(from 122deg at 50% 72.5%, var(--c1) 0 116deg, #fff0 0 100%)
+        var(--gp),
+      conic-gradient(from 58deg at 82.85% 50%, var(--c3) 0 64deg, #fff0 0 100%)
+        var(--gp),
+      conic-gradient(
+          from 58deg at 66.87% 50%,
+          var(--c1) 0 64deg,
+          var(--c2) 0 130deg,
+          #fff0 0 100%
+        )
+        var(--gp),
+      conic-gradient(from 238deg at 17.15% 50%, var(--c2) 0 64deg, #fff0 0 100%)
+        var(--gp),
+      conic-gradient(
+          from 172deg at 33.13% 50%,
+          var(--c3) 0 66deg,
+          var(--c1) 0 130deg,
+          #fff0 0 100%
+        )
+        var(--gp),
+      linear-gradient(98deg, var(--c3) 0 15%, #fff0 calc(15% + 1px) 100%)
+        var(--gp),
+      linear-gradient(-98deg, var(--c2) 0 15%, #fff0 calc(15% + 1px) 100%)
+        var(--gp),
+      conic-gradient(
+          from -58deg at 50.25% 14.85%,
+          var(--c3) 0 58deg,
+          var(--c2) 0 116deg,
+          #fff0 0 100%
+        )
+        var(--gp),
+      conic-gradient(from -58deg at 50% 28.125%, var(--c1) 0 116deg, #fff0 0 100%)
+        var(--gp),
+      linear-gradient(90deg, var(--c2) 0 50%, var(--c3) 0 100%) var(--gp);
+      display: flex
+  
+    }
+
+.empresa {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centralizar conteúdo */
+}
+
+.empresa img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.box_port {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .port_font {
+    font-size: 4rem;
+    font-style: 'Roboto Mono', monospace;
+    margin-bottom: 2rem;
+    background: rgb(116, 114, 114);
+    background-size: 400% 100%;
+    animation: gradient-bg 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; /* Alterado para centralizar o texto */
+    padding: 7rem;
+    box-sizing: border-box;
+    display: flex; /* Adiciona display flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  .box_port {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centralizar conteúdo */
 }
