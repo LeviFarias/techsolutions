@@ -330,83 +330,23 @@ a:hover {
     animation: gradient-bg 3s linear infinite;
 }
 
-.glass {
-    color: white;
-    position: relative;
-    font-family: sans-serif;
+.pattern_card {
+    width: 100%;
+    background: rgb(223, 225, 235);
+    /* border-radius: 50px; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
-  
-  .glass::before,
-  .glass::after {
-    content: "";
-    background-color: #fab5704c;
-    position: absolute;
-  }
-  
-  .glass::before {
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
-    top: 30%;
-    right: 7%;
-  }
-  
-  .glass::after {
-    content: "";
-    position: absolute;
-    height: 3rem;
-    top: 8%;
-    right: 5%;
-    border: 1px solid;
-  }
-  
-  .glass .box {
-    width: 11.875em;
-    height: 15.875em;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.074);
-    border: 1px solid rgba(255, 255, 255, 0.222);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: 0.7rem;
-    transition: all ease 0.3s;
-  }
-  
-  .glass .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .glass .box .title {
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-  }
-  
-  .glass .box div strong {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .glass .box div p {
-    margin: 0;
-    font-size: 0.9em;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-  }
-  
-  .glass .box div span {
-    font-size: 0.7rem;
-    font-weight: 300;
-  }
-  
-  .glass .box div span:nth-child(3) {
-    font-weight: 500;
-    margin-right: 0.2rem;
-  }
-  
-  .glass .box:hover {
-    box-shadow: 0px 0px 20px 1px #ffbb763f;
-    border: 1px solid rgba(255, 255, 255, 0.454);
-  }
+
+  .pattern_texto {
+    font-size: 32px;
+    /* margin-bottom: 70px; */
+    background: rgb(0, 0, 0);
+    background-size: 400% 100%;
+    animation: gradient-bg 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: right;
+    padding: 3rem;
+    box-sizing: border-box;
+}
