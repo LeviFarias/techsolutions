@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tech Solutions</h1>
+    <h1>Seja bem-vindo a nossa página de serviços! </h1>
+    <p>Conheça mais sobre os preços e serviços da Tech Solutions.</p>
+    <h2>Desenvolvimento de websites e Automatização de negócios</h2>
+    <p>Para suprir suas necessidades tecnológicas e expandir cada vez mais seus negócios para a aréa digital, nós da Tech Solutions desenvolvemos sites que vão desde os mais simples frameworks até os mais complexos! </p>
+    <h2>Suporte ativo</h2>
+    <p>Caso sua necessidade seja de manutenção ou de suporte ativo para seus proprios programas conte com nossa equipe de programadores FullStack que estão sempre de prontidão para resolver qualquer problema.</p>
+    <h2>Vendas e orçamentos</h2>
+    <P>Nossos preços podem variar em média de R$ 600,00 até mesmo R$ 10.000,00 de acordo com sua demanda. Por isso para conhecer mais do seu orçamento contamos com uma equipe de vendas 100% digital!</P>
+    <h2>Fale com um de nossos atentedentes </h2>
+    <h3><Strong>WhatsApp:</Strong> <li>+55 (85) 987761131</li>
+    <li>+55 (85) 985137280</li></h3>
+    <h3><Strong>E-mail:</Strong> <li>techsolutionscomercial@terra.com.br</li><li>techsolutionsserviços@terra.com.br</li></h3>
+</body>
+</html>
